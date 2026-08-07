@@ -89,14 +89,14 @@ export function Contact() {
                 Name
               </label>
               <input id="name" name="name" className={field} placeholder="Your name" />
-              {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name}</p>}
+              {errors['name'] && <p className="mt-1 text-xs text-destructive">{errors['name']}</p>}
             </div>
             <div>
               <label htmlFor="email" className="mb-1.5 block text-xs font-semibold">
                 Email
               </label>
               <input id="email" name="email" className={field} placeholder="you@example.com" />
-              {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email}</p>}
+              {errors['email'] && <p className="mt-1 text-xs text-destructive">{errors['email']}</p>}
             </div>
           </div>
           <div>
@@ -104,14 +104,14 @@ export function Contact() {
               Subject
             </label>
             <input id="subject" name="subject" className={field} placeholder="How can I help?" />
-            {errors.subject && <p className="mt-1 text-xs text-destructive">{errors.subject}</p>}
+            {errors['subject'] && <p className="mt-1 text-xs text-destructive">{errors['subject']}</p>}
           </div>
           <div>
             <label htmlFor="message" className="mb-1.5 block text-xs font-semibold">
               Message
             </label>
             <textarea id="message" name="message" rows={5} className={field} placeholder="Your message..." />
-            {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message}</p>}
+            {errors['message'] && <p className="mt-1 text-xs text-destructive">{errors['message']}</p>}
           </div>
           <button
             type="submit"
