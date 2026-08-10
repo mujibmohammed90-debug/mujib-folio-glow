@@ -21,11 +21,11 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border">
-      <div className="mx-auto max-w-7xl px-5 py-12 text-center">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 text-center">
         <p className="font-display text-lg font-bold">Mujib Mohammed</p>
         <p className="mt-1 text-sm text-muted-foreground">Frontend Developer</p>
 
-        <ul className="mt-6 flex justify-center gap-3">
+        <ul className="mt-6 flex flex-wrap justify-center gap-3">
           {socials.map((s) => (
             <li key={s.label}>
               <a

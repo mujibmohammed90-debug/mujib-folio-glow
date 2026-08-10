@@ -52,7 +52,7 @@ export function Contact() {
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="glass space-y-5 rounded-3xl p-7"
+          className="glass space-y-5 rounded-3xl p-5 sm:p-7"
         >
           <h3 className="text-lg font-bold">Contact Information</h3>
           <ul className="space-y-4">
@@ -81,7 +81,7 @@ export function Contact() {
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="glass space-y-4 rounded-3xl p-7"
+          className="glass space-y-4 rounded-3xl p-5 sm:p-7"
         >
           <div className="grid gap-4 sm:grid-cols-2">
             <div>
@@ -115,7 +115,7 @@ export function Contact() {
           </div>
           <button
             type="submit"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 sm:w-auto text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
           >
             Send Message <Send className="h-4 w-4" />
           </button>

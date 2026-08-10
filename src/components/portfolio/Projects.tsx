@@ -26,7 +26,7 @@ const projects = [
 export function Projects() {
   return (
     <Section id="projects" eyebrow="My work" title="Projects">
-      <div className="grid gap-7 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 sm:gap-7 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((p, i) => (
           <motion.article
             key={p.title}
@@ -45,15 +45,15 @@ export function Projects() {
                 loading="lazy"
                 width={800}
                 height={600}
-                className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="h-48 w-full object-cover sm:h-56 transition-transform duration-500 group-hover:scale-110"
               />
             </div>
-            <div className="flex flex-1 flex-col p-6">
+            <div className="flex flex-1 flex-col p-5 sm:p-6">
               <div className="flex items-center gap-3">
                 <div className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary">
                   <p.icon className="h-5 w-5" />
                 </div>
-                <h3 className="text-lg font-bold leading-tight">{p.title}</h3>
+                <h3 className="min-w-0 text-base font-bold leading-tight sm:text-lg">{p.title}</h3>
               </div>
               <p className="mt-3 flex-1 text-sm text-muted-foreground">{p.desc}</p>
               <div className="mt-4 flex flex-wrap gap-2">
@@ -70,7 +70,7 @@ export function Projects() {
                 href={p.live}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
               >
                 <ExternalLink className="h-4 w-4" /> Live Demo
               </a>

@@ -22,7 +22,7 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.15fr_1fr]">
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 sm:gap-12 sm:py-16 lg:grid-cols-[1.15fr_1fr]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,34 +31,34 @@ export function Hero() {
           <span className="glass inline-flex rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-accent">
             Werabe University
           </span>
-          <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-6xl">
+          <h1 className="mt-6 text-3xl font-extrabold leading-[1.15] tracking-tight sm:text-5xl lg:text-6xl">
             Mujib <span className="text-gradient">Mohammed</span>
           </h1>
           <p className="mt-4 text-lg font-semibold text-accent sm:text-xl">Frontend Developer</p>
           <p className="mt-1 text-base text-muted-foreground">
             3rd Year Information Technology Student
           </p>
-          <p className="mt-6 max-w-xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-xl text-base text-muted-foreground sm:text-lg">
             "Building Modern, Responsive, and User-Friendly Websites."
           </p>
 
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href="#projects"
-              className="glow inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+              className="glow inline-flex w-full items-center justify-center gap-2 sm:w-auto rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
             >
               View Projects <ArrowDown className="h-4 w-4" />
             </a>
             <a
               href={resume.url}
               download="Mujib_Mohammed_Resume.pdf"
-              className="glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:scale-105"
+              className="glass inline-flex w-full items-center justify-center gap-2 sm:w-auto rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:scale-105"
             >
               Download Resume <Download className="h-4 w-4" />
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-full border border-accent px-6 py-3 text-sm font-semibold text-accent transition-transform hover:scale-105"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-accent sm:w-auto px-6 py-3 text-sm font-semibold text-accent transition-transform hover:scale-105"
             >
               Contact Me <Mail className="h-4 w-4" />
             </a>
@@ -82,7 +82,7 @@ export function Hero() {
               alt="Portrait of Mujib Mohammed"
               width={360}
               height={360}
-              className="relative h-56 w-56 rounded-full border-4 border-accent/70 object-cover shadow-2xl sm:h-72 sm:w-72 lg:h-80 lg:w-80"
+              className="relative h-44 w-44 rounded-full border-4 border-accent/70 object-cover shadow-2xl sm:h-72 sm:w-72 lg:h-80 lg:w-80"
             />
           </motion.div>
         </motion.div>

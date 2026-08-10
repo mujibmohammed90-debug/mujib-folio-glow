@@ -14,7 +14,7 @@ const courses = [
 export function Education() {
   return (
     <Section id="education" eyebrow="My background" title="Education">
-      <div className="relative mx-auto max-w-3xl pl-8">
+      <div className="relative mx-auto max-w-3xl pl-7 sm:pl-8">
         <div className="absolute left-2 top-2 h-full w-px bg-linear-to-b from-primary to-transparent" />
 
         <motion.div
@@ -25,11 +25,11 @@ export function Education() {
           transition={{ duration: 0.6 }}
           className="relative"
         >
-          <span className="glow absolute -left-8 top-6 grid h-5 w-5 place-items-center rounded-full bg-primary ring-4 ring-background" />
-          <div className="glass rounded-3xl p-7">
+          <span className="glow absolute -left-7 top-6 sm:-left-8 grid h-5 w-5 place-items-center rounded-full bg-primary ring-4 ring-background" />
+          <div className="glass rounded-3xl p-5 sm:p-7">
             <div className="flex min-w-0 items-center gap-3">
               <GraduationCap className="h-6 w-6 shrink-0 text-accent" />
-              <h3 className="truncate text-xl font-bold">Werabe University</h3>
+              <h3 className="truncate text-lg font-bold sm:text-xl">Werabe University</h3>
             </div>
             <p className="mt-2 font-medium">Bachelor of Science in Information Technology</p>
             <p className="mt-1 inline-flex rounded-full bg-primary/20 px-3 py-1 text-xs font-semibold text-accent">
