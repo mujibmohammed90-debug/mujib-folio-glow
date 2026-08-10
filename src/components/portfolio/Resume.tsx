@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Section, fadeUp } from "./Section";
-import { FileDown } from "lucide-react";
-import resume from "@/assets/resume.docx.asset.json";
+import { Download, Eye } from "lucide-react";
+import resume from "@/assets/resume.pdf.asset.json";
 
 export function Resume() {
   return (
@@ -16,20 +16,30 @@ export function Resume() {
         className="glass glow mx-auto max-w-2xl rounded-3xl p-10 text-center"
       >
         <span className="mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-primary/20 text-accent">
-          <FileDown className="h-6 w-6" />
+          <Download className="h-6 w-6" />
         </span>
-        <h3 className="mt-5 text-2xl font-bold">Download My Resume</h3>
+        <h3 className="mt-5 text-2xl font-bold">My Resume</h3>
         <p className="mt-3 text-sm text-muted-foreground">
           A complete overview of my skills, education, and projects as a Frontend Developer and IT
           student at Werabe University.
         </p>
-        <a
-          href={resume.url}
-          download="Mujib_Mohammed_Resume.docx"
-          className="mt-7 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
-        >
-          Download CV <FileDown className="h-4 w-4" />
-        </a>
+        <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
+          <a
+            href={resume.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+          >
+            View Resume <Eye className="h-4 w-4" />
+          </a>
+          <a
+            href={resume.url}
+            download="Mujib_Mohammed_Resume.pdf"
+            className="glass inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-semibold transition-transform hover:scale-105"
+          >
+            Download Resume <Download className="h-4 w-4" />
+          </a>
+        </div>
       </motion.div>
     </Section>
   );

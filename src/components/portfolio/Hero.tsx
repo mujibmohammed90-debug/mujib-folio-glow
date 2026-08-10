@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Download, Mail } from "lucide-react";
 import techBg from "@/assets/tech-bg.jpg";
 import photo from "@/assets/mujib.jpg.asset.json";
-import resume from "@/assets/resume.docx.asset.json";
+import resume from "@/assets/resume.pdf.asset.json";
 
 export function Hero() {
   return (
@@ -51,7 +51,7 @@ export function Hero() {
             </a>
             <a
               href={resume.url}
-              download="Mujib_Mohammed_Resume.docx"
+              download="Mujib_Mohammed_Resume.pdf"
               className="glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:scale-105"
             >
               Download Resume <Download className="h-4 w-4" />
