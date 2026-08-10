@@ -6,7 +6,7 @@ const socials = [
   { icon: Github, label: "GitHub", href: "https://github.com/" },
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/" },
   { icon: Facebook, label: "Facebook", href: "https://facebook.com/" },
-  { icon: Send, label: "Telegram", href: "https://telegram.org/" },
+  { icon: Send, label: "Telegram", href: "https://t.m/mujb55" },
   { icon: Instagram, label: "Instagram", href: "https://instagram.com/" },
 ];
 
