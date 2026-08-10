@@ -34,7 +34,7 @@ export function Nav() {
         scrolled ? "glass" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 lg:flex lg:justify-between">
+      <nav className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 sm:px-6 sm:py-4 lg:flex lg:justify-between">
         <a href="#home" className="min-w-0 truncate font-display text-lg font-extrabold tracking-tight">
           Mujib<span className="text-gradient">.dev</span>
         </a>
@@ -83,7 +83,7 @@ export function Nav() {
                 <a
                   href={`#${l.id}`}
                   onClick={() => setOpen(false)}
-                  className="block border-b border-border/50 py-3 text-sm font-medium text-muted-foreground"
+                  className="block border-b border-border/50 py-3.5 text-base sm:text-sm font-medium text-muted-foreground"
                 >
                   {l.label}
                 </a>

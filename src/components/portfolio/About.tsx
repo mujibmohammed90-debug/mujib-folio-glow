@@ -5,7 +5,7 @@ import photo from "@/assets/mujib.jpg.asset.json";
 export function About() {
   return (
     <Section id="about" eyebrow="Who I am" title="About Me">
-      <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+      <div className="grid items-center gap-10 sm:gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -33,7 +33,7 @@ export function About() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="space-y-5 text-muted-foreground"
         >
-          <p className="text-lg">
+          <p className="text-base sm:text-lg">
             Hello! I'm <span className="font-semibold text-foreground">Mujib Mohammed</span>, a
             passionate Frontend Developer and a 3rd Year Information Technology student at Werabe
             University.

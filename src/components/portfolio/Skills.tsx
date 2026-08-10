@@ -48,7 +48,7 @@ const groups = [
 export function Skills() {
   return (
     <Section id="skills" eyebrow="What I know" title="Skills">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
         {groups.map((g, gi) => (
           <motion.article
             key={g.title}
@@ -58,7 +58,7 @@ export function Skills() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, delay: gi * 0.08 }}
             whileHover={{ scale: 1.03 }}
-            className="glass rounded-3xl p-6"
+            className="glass rounded-3xl p-5 sm:p-6"
           >
             <div className="mb-5 flex items-center gap-3">
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary/20 text-accent">
