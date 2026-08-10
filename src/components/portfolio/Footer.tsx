@@ -6,7 +6,7 @@ const socials = [
   { icon: Github, label: "GitHub", href: "https://github.com/" },
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/" },
   { icon: Facebook, label: "Facebook", href: "https://facebook.com/" },
-  { icon: Send, label: "Telegram", href: "https://telegram.org/" },
+  { icon: Send, label: "Telegram", href: "https://t.m/mujb55" },
   { icon: Instagram, label: "Instagram", href: "https://instagram.com/" },
 ];
 
@@ -31,7 +31,7 @@ export function Footer() {
               <a
                 href={s.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label={s.label}
                 className="grid h-11 w-11 place-items-center rounded-full border border-border transition-all hover:scale-110 hover:border-accent hover:text-accent"
               >
