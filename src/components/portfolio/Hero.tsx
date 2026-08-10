@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Download, Mail } from "lucide-react";
 import techBg from "@/assets/tech-bg.jpg";
 import photo from "@/assets/mujib.jpg.asset.json";
-import resume from "@/assets/resume.docx.asset.json";
+import resume from "@/assets/resume.pdf.asset.json";
 
 export function Hero() {
   return (
