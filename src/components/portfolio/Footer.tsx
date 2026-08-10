@@ -31,7 +31,7 @@ export function Footer() {
               <a
                 href={s.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label={s.label}
                 className="grid h-11 w-11 place-items-center rounded-full border border-border transition-all hover:scale-110 hover:border-accent hover:text-accent"
               >
