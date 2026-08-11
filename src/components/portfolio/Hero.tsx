@@ -6,7 +6,10 @@ import resume from "@/assets/resume.pdf.asset.json";
 
 export function Hero() {
   return (
-    <section id="home" className="relative flex min-h-screen items-center overflow-hidden pt-24">
+    <section
+      id="home"
+      className="relative flex min-h-screen w-full max-w-full items-center overflow-hidden pt-20 sm:pt-24"
+    >
       <img
         src={techBg}
         alt=""
