@@ -25,12 +25,12 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto grid w-full max-w-7xl box-border items-center gap-10 px-4 py-12 sm:px-6 sm:gap-12 sm:py-16 lg:grid-cols-[1.15fr_1fr]">
+      <div className="relative mx-auto flex w-full max-w-7xl box-border flex-col items-center gap-8 px-4 py-10 text-center sm:px-6 sm:gap-12 sm:py-16 lg:grid lg:grid-cols-[1.15fr_1fr] lg:items-center lg:text-left">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="min-w-0"
+          className="order-2 w-full min-w-0 lg:order-1"
         >
           <span className="glass inline-flex rounded-full px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-accent sm:px-4 sm:text-xs sm:tracking-[0.25em]">
             Werabe University
