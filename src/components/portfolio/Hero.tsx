@@ -6,7 +6,10 @@ import resume from "@/assets/resume.pdf.asset.json";
 
 export function Hero() {
   return (
-    <section id="home" className="relative flex min-h-screen items-center overflow-hidden pt-24">
+    <section
+      id="home"
+      className="relative flex min-h-screen w-full max-w-full items-center overflow-hidden pt-20 sm:pt-24"
+    >
       <img
         src={techBg}
         alt=""
@@ -22,25 +25,28 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 sm:gap-12 sm:py-16 lg:grid-cols-[1.15fr_1fr]">
+      <div className="relative mx-auto grid w-full max-w-7xl box-border items-center gap-10 px-4 py-12 sm:px-6 sm:gap-12 sm:py-16 lg:grid-cols-[1.15fr_1fr]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
+          className="min-w-0"
         >
-          <span className="glass inline-flex rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-accent">
+          <span className="glass inline-flex rounded-full px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-accent sm:px-4 sm:text-xs sm:tracking-[0.25em]">
             Werabe University
           </span>
-          <h1 className="mt-6 text-3xl font-extrabold leading-[1.15] tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="mt-5 text-2xl font-extrabold leading-[1.15] tracking-tight sm:text-4xl lg:text-6xl">
+
             Mujib <span className="text-gradient">Mohammed</span>
           </h1>
-          <p className="mt-4 text-lg font-semibold text-accent sm:text-xl">Frontend Developer</p>
-          <p className="mt-1 text-base text-muted-foreground">
+          <p className="mt-4 text-base font-semibold text-accent sm:text-xl">Frontend Developer</p>
+          <p className="mt-1 text-sm text-muted-foreground sm:text-base">
             3rd Year Information Technology Student
           </p>
-          <p className="mt-6 max-w-xl text-base text-muted-foreground sm:text-lg">
+          <p className="mt-5 max-w-xl text-sm text-muted-foreground sm:text-lg">
             "Building Modern, Responsive, and User-Friendly Websites."
           </p>
+
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
