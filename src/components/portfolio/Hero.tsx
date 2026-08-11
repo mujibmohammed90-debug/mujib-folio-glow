@@ -43,12 +43,12 @@ export function Hero() {
           <p className="mt-1 text-sm text-muted-foreground sm:text-base">
             3rd Year Information Technology Student
           </p>
-          <p className="mt-5 max-w-xl text-sm text-muted-foreground sm:text-lg">
+          <p className="mt-5 mx-auto max-w-xl text-sm lg:mx-0 text-muted-foreground sm:text-lg">
             "Building Modern, Responsive, and User-Friendly Websites."
           </p>
 
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <div className="mt-8 flex w-full flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
             <a
               href="#projects"
               className="glow inline-flex w-full items-center justify-center gap-2 sm:w-auto rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
@@ -75,7 +75,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="justify-self-center"
+          className="order-1 justify-self-center lg:order-2"
         >
           <motion.div
             animate={{ y: [0, -16, 0] }}
