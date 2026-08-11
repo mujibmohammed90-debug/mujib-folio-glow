@@ -48,7 +48,7 @@ export function About() {
             user experience.
           </p>
 
-          <dl className="grid gap-4 pt-4 sm:grid-cols-3">
+          <dl className="grid gap-4 pt-4 md:grid-cols-3">
             {[
               { k: "University", v: "Werabe University" },
               { k: "Field", v: "Information Technology" },

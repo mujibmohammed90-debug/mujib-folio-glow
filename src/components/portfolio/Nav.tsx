@@ -56,14 +56,14 @@ export function Nav() {
           <button
             aria-label="Toggle color theme"
             onClick={() => setLight((v) => !v)}
-            className="grid h-10 w-10 place-items-center rounded-full border border-border text-foreground transition-colors hover:bg-secondary"
+            className="grid h-11 w-11 place-items-center rounded-full border border-border text-foreground transition-colors hover:bg-secondary"
           >
             {light ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
           </button>
           <button
             aria-label="Toggle navigation menu"
             onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 place-items-center rounded-full border border-border lg:hidden"
+            className="grid h-11 w-11 place-items-center rounded-full border border-border lg:hidden"
           >
             {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>

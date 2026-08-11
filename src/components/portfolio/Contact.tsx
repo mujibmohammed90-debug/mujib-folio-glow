@@ -83,7 +83,7 @@ export function Contact() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="glass space-y-4 rounded-3xl p-5 sm:p-7"
         >
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-2">
             <div>
               <label htmlFor="name" className="mb-1.5 block text-xs font-semibold">
                 Name
