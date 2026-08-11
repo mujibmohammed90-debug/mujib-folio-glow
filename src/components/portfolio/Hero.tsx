@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen w-full max-w-full items-center overflow-hidden pt-20 sm:pt-24"
+      className="relative flex min-h-[100svh] w-full max-w-full items-center overflow-hidden pt-20 sm:pt-24"
     >
       <img
         src={techBg}
@@ -25,12 +25,12 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto grid w-full max-w-7xl box-border items-center gap-10 px-4 py-12 sm:px-6 sm:gap-12 sm:py-16 lg:grid-cols-[1.15fr_1fr]">
+      <div className="relative mx-auto flex w-full max-w-7xl box-border flex-col items-center gap-8 px-4 py-10 text-center sm:px-6 sm:gap-12 sm:py-16 lg:grid lg:grid-cols-[1.15fr_1fr] lg:items-center lg:text-left">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="min-w-0"
+          className="order-2 w-full min-w-0 lg:order-1"
         >
           <span className="glass inline-flex rounded-full px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-accent sm:px-4 sm:text-xs sm:tracking-[0.25em]">
             Werabe University
@@ -43,12 +43,12 @@ export function Hero() {
           <p className="mt-1 text-sm text-muted-foreground sm:text-base">
             3rd Year Information Technology Student
           </p>
-          <p className="mt-5 max-w-xl text-sm text-muted-foreground sm:text-lg">
+          <p className="mt-5 mx-auto max-w-xl text-sm lg:mx-0 text-muted-foreground sm:text-lg">
             "Building Modern, Responsive, and User-Friendly Websites."
           </p>
 
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <div className="mt-8 flex w-full flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
             <a
               href="#projects"
               className="glow inline-flex w-full items-center justify-center gap-2 sm:w-auto rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
@@ -75,7 +75,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="justify-self-center"
+          className="order-1 justify-self-center lg:order-2"
         >
           <motion.div
             animate={{ y: [0, -16, 0] }}
